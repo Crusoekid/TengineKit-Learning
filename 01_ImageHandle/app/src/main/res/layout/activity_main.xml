@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/originll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/originImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/afterll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/originll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/afterImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher_background" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Relad1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/btn_resize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="resize"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/btn_mirror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mirror"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btn_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cut"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/Relad1"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/btn_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate90"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate180"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate270"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
